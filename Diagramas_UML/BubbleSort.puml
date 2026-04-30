@@ -1,0 +1,28 @@
+@startuml
+title Bubble Sort
+
+start
+:Recibir arreglo A;
+:Definir n como tamaño de A;
+:Definir intercambio como verdadero;
+
+while (intercambio es verdadero) 
+  :intercambio = falso;
+  :i = 0;
+
+  while (i < n - 1)
+    if (A[i] > A[i+1]) then (Si)
+      :Intercambiar A[i] y A[i+1];
+      :intercambio = verdadero;
+    else (No)
+    endif
+    :i = i + 1;
+  endwhile
+
+  :n = n - 1;
+endwhile
+
+:Arreglo ordenado;
+stop
+
+@enduml

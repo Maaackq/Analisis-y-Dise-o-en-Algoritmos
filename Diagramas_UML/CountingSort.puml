@@ -1,0 +1,21 @@
+@startuml
+title Counting Sort
+
+start
+:Encontrar maximo;
+:Crear arreglo contador;
+
+:i = 0;
+while (i < n)
+  :Contar elementos;
+  :i = i + 1;
+endwhile
+
+:i = 0;
+while (i < tamaño contador)
+  :Reconstruir arreglo;
+  :i = i + 1;
+endwhile
+
+stop
+@enduml

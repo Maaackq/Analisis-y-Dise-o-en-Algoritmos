@@ -1,0 +1,16 @@
+@startuml
+title Merge Sort
+
+start
+
+if (n <= 1) then (Si)
+  :Retornar;
+else (No)
+  :Dividir arreglo;
+  :Ordenar izquierda;
+  :Ordenar derecha;
+  :Fusionar;
+endif
+
+stop
+@enduml

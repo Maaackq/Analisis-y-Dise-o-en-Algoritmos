@@ -1,0 +1,15 @@
+@startuml
+title Random Quick Sort
+
+start
+
+if (inicio < fin) then (Si)
+  :Elegir pivote aleatorio;
+  :Intercambiar;
+  :Particionar;
+  :Ordenar izquierda;
+  :Ordenar derecha;
+endif
+
+stop
+@enduml

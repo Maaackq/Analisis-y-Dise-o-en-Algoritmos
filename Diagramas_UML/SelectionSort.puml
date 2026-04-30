@@ -1,0 +1,23 @@
+@startuml
+title Selection Sort
+
+start
+:i = 0;
+
+while (i < n - 1)
+  :min = i;
+  :j = i + 1;
+
+  while (j < n)
+    if (A[j] < A[min]) then (Si)
+      :min = j;
+    endif
+    :j = j + 1;
+  endwhile
+
+  :Intercambiar A[i] y A[min];
+  :i = i + 1;
+endwhile
+
+stop
+@enduml
