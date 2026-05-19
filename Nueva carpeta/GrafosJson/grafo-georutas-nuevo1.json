@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "name": "Nodo A",
+      "lat": 22.74902740814639,
+      "lng": -102.60492563269821,
+      "type": "waypoint",
+      "description": "Nodo creado desde el constructor visual"
+    },
+    {
+      "id": "N01",
+      "name": "Centro Histórico",
+      "lat": 22.7709,
+      "lng": -102.5833,
+      "type": "origin",
+      "description": "Nodo urbano de referencia"
+    },
+    {
+      "id": "N02",
+      "name": "Alameda",
+      "lat": 22.7729,
+      "lng": -102.5741,
+      "type": "waypoint",
+      "description": "Conexión central"
+    },
+    {
+      "id": "N03",
+      "name": "Hospital General",
+      "lat": 22.7604,
+      "lng": -102.5688,
+      "type": "service",
+      "description": "Zona de servicios"
+    },
+    {
+      "id": "N04",
+      "name": "Campus UAZ",
+      "lat": 22.7751,
+      "lng": -102.6072,
+      "type": "education",
+      "description": "Nodo académico"
+    },
+    {
+      "id": "N05",
+      "name": "Guadalupe Centro",
+      "lat": 22.7476,
+      "lng": -102.5184,
+      "type": "destination",
+      "description": "Nodo oriental"
+    },
+    {
+      "id": "N06",
+      "name": "Parque Arroyo",
+      "lat": 22.7586,
+      "lng": -102.5418,
+      "type": "waypoint",
+      "description": "Conector intermedio"
+    },
+    {
+      "id": "N07",
+      "name": "Estación Norte",
+      "lat": 22.7898,
+      "lng": -102.5607,
+      "type": "transport",
+      "description": "Nodo de movilidad"
+    },
+    {
+      "id": "N08",
+      "name": "Mirador Urbano",
+      "lat": 22.7818,
+      "lng": -102.5919,
+      "type": "waypoint",
+      "description": "Conexión panorámica"
+    },
+    {
+      "id": "N09",
+      "name": "Zona Industrial",
+      "lat": 22.7358,
+      "lng": -102.5481,
+      "type": "industry",
+      "description": "Nodo sur"
+    },
+    {
+      "id": "N10",
+      "name": "Terminal Sur",
+      "lat": 22.7249,
+      "lng": -102.5749,
+      "type": "transport",
+      "description": "Nodo terminal"
+    },
+    {
+      "id": "NEW1",
+      "name": "Nuevo1",
+      "lat": 22.748383339501604,
+      "lng": -102.60329999999999,
+      "type": "waypoint",
+      "description": "Nodo creado desde el constructor visual"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "sourceId": "N01",
+      "targetId": "N02",
+      "distance": 1.15,
+      "time": 4.2,
+      "cost": 1.4,
+      "bidirectional": 1,
+      "label": "Centro-Alameda"
+    },
+    {
+      "id": "E02",
+      "sourceId": "N02",
+      "targetId": "N03",
+      "distance": 1.85,
+      "time": 5.1,
+      "cost": 2.1,
+      "bidirectional": 1,
+      "label": "Alameda-Hospital"
+    },
+    {
+      "id": "E03",
+      "sourceId": "N03",
+      "targetId": "N06",
+      "distance": 2.7,
+      "time": 7.5,
+      "cost": 3,
+      "bidirectional": 1,
+      "label": "Hospital-Parque"
+    },
+    {
+      "id": "E04",
+      "sourceId": "N06",
+      "targetId": "N05",
+      "distance": 2.95,
+      "time": 8.3,
+      "cost": 3.6,
+      "bidirectional": 1,
+      "label": "Parque-Guadalupe"
+    },
+    {
+      "id": "E05",
+      "sourceId": "N01",
+      "targetId": "N08",
+      "distance": 1.6,
+      "time": 5.9,
+      "cost": 2.5,
+      "bidirectional": 1,
+      "label": "Centro-Mirador"
+    },
+    {
+      "id": "E06",
+      "sourceId": "N08",
+      "targetId": "N04",
+      "distance": 2.25,
+      "time": 7.2,
+      "cost": 2.7,
+      "bidirectional": 1,
+      "label": "Mirador-Campus"
+    },
+    {
+      "id": "E07",
+      "sourceId": "N08",
+      "targetId": "N07",
+      "distance": 2.75,
+      "time": 7.8,
+      "cost": 2.9,
+      "bidirectional": 1,
+      "label": "Mirador-Estación"
+    },
+    {
+      "id": "E08",
+      "sourceId": "N07",
+      "targetId": "N05",
+      "distance": 5.85,
+      "time": 13.4,
+      "cost": 6,
+      "bidirectional": 1,
+      "label": "Estación-Guadalupe"
+    },
+    {
+      "id": "E09",
+      "sourceId": "N03",
+      "targetId": "N09",
+      "distance": 3.15,
+      "time": 8.6,
+      "cost": 3.9,
+      "bidirectional": 1,
+      "label": "Hospital-Industrial"
+    },
+    {
+      "id": "E10",
+      "sourceId": "N09",
+      "targetId": "N10",
+      "distance": 3.05,
+      "time": 7.9,
+      "cost": 3.2,
+      "bidirectional": 1,
+      "label": "Industrial-Terminal"
+    },
+    {
+      "id": "E11",
+      "sourceId": "N10",
+      "targetId": "N01",
+      "distance": 5.4,
+      "time": 14.8,
+      "cost": 6.5,
+      "bidirectional": 1,
+      "label": "Terminal-Centro"
+    },
+    {
+      "id": "E12",
+      "sourceId": "N02",
+      "targetId": "N07",
+      "distance": 2.1,
+      "time": 6,
+      "cost": 2.4,
+      "bidirectional": 1,
+      "label": "Alameda-Estación"
+    },
+    {
+      "id": "E13",
+      "sourceId": "N06",
+      "targetId": "N09",
+      "distance": 2.35,
+      "time": 6.8,
+      "cost": 2.6,
+      "bidirectional": 1,
+      "label": "Parque-Industrial"
+    },
+    {
+      "id": "E14",
+      "sourceId": "N04",
+      "targetId": "N01",
+      "distance": 3,
+      "time": 8.7,
+      "cost": 3.1,
+      "bidirectional": 1,
+      "label": "Campus-Centro"
+    },
+    {
+      "id": "E15",
+      "sourceId": "N04",
+      "targetId": "N10",
+      "distance": 6.3,
+      "time": 15.4,
+      "cost": 6.8,
+      "bidirectional": 1,
+      "label": "Campus-Terminal"
+    },
+    {
+      "id": "E16_N02_N04",
+      "sourceId": "N02",
+      "targetId": "N04",
+      "distance": 0,
+      "time": 0,
+      "cost": 0,
+      "bidirectional": 1,
+      "label": "N02-N04"
+    },
+    {
+      "id": "E17_NEW1_N02",
+      "sourceId": "NEW1",
+      "targetId": "N02",
+      "distance": 3.5,
+      "time": 3.5,
+      "cost": 3.5,
+      "bidirectional": 1,
+      "label": "NEW1-N02"
+    }
+  ]
+}

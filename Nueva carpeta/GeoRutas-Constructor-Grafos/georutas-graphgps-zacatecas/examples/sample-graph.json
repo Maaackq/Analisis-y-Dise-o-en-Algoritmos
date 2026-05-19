@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    { "id": "A", "name": "Nodo A", "lat": 22.7709, "lng": -102.5833, "type": "origin", "description": "Inicio" },
+    { "id": "B", "name": "Nodo B", "lat": 22.7729, "lng": -102.5741, "type": "waypoint", "description": "Intermedio" },
+    { "id": "C", "name": "Nodo C", "lat": 22.7604, "lng": -102.5688, "type": "waypoint", "description": "Intermedio" },
+    { "id": "D", "name": "Nodo D", "lat": 22.7476, "lng": -102.5184, "type": "destination", "description": "Destino" }
+  ],
+  "edges": [
+    { "id": "AB", "sourceId": "A", "targetId": "B", "distance": 1, "time": 2, "cost": 1, "bidirectional": 1, "label": "A-B" },
+    { "id": "BC", "sourceId": "B", "targetId": "C", "distance": 2, "time": 3, "cost": 2, "bidirectional": 1, "label": "B-C" },
+    { "id": "CD", "sourceId": "C", "targetId": "D", "distance": 3, "time": 4, "cost": 3, "bidirectional": 1, "label": "C-D" },
+    { "id": "AD", "sourceId": "A", "targetId": "D", "distance": 8, "time": 9, "cost": 8, "bidirectional": 1, "label": "A-D" }
+  ]
+}

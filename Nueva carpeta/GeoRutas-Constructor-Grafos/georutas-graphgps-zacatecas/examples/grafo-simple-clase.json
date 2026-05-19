@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    { "id": "A", "name": "Nodo A" },
+    { "id": "B", "name": "Nodo B" },
+    { "id": "C", "name": "Nodo C" },
+    { "id": "D", "name": "Nodo D" },
+    { "id": "E", "name": "Nodo E" }
+  ],
+  "edges": [
+    { "source": "A", "target": "B", "weight": 4 },
+    { "source": "A", "target": "C", "weight": 2 },
+    { "source": "B", "target": "C", "weight": 1 },
+    { "source": "B", "target": "D", "weight": 5 },
+    { "source": "C", "target": "D", "weight": 8 },
+    { "source": "C", "target": "E", "weight": 10 },
+    { "source": "D", "target": "E", "weight": 2 }
+  ]
+}
